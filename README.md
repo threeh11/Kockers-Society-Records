@@ -1,1 +1,1 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://sun9-44.userapi.com/impf/lUjz0iahKuQVEI6jxD_aPxf4MLwIji8ZgkM6FA/0kcYqtK6nhc.jpg?size=795x265&quality=95&crop=194,0,1200,400&sign=c02167aa617550bf5c108760e3786dab&type=cover_group" width="400" alt="Laravel Logo"></a></p>
