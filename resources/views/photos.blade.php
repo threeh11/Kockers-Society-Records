@@ -88,6 +88,6 @@
         </div>
     </div>
     <div class="text-center py-20">
-        <a href="#" class="text-bg dark:text-white font-normal text-[24px] leading-7">All photos</a>
+        <a href="" class="text-bg dark:text-white font-normal text-[24px] leading-7">All photos</a>
     </div>
 @endsection
