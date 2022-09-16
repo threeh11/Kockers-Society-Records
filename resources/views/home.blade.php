@@ -30,4 +30,5 @@ Society</h1>
             </div>
         </div>
     </div>
+    @include('includes.nav')
 @endsection

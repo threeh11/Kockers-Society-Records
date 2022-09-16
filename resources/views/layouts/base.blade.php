@@ -21,7 +21,6 @@
         <main class="mt-24">
             @yield('content')
         </main>
-        @include('includes.nav')
     </div>
 </body>
 <script src="{{ asset('js/main.js') }}"></script>
