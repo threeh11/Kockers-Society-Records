@@ -1,19 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kockers Society</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ asset('favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-    
-</body>
-</html>
+@extends('layouts.base')
+
+@section('content')
+    <div>
+        <h1 class="whitespace-pre selection:text-accent selection:bg-bg dark:selection:bg-white w-min">Kockers
+Society</h1>
+    <h1 class="selection:text-accent selection:bg-bg dark:selection:bg-white w-min relative">Records<div class="w-full absolute bg-accent h-1 top-20"></div></h1>
+        <h2 class="text-accent dark:text-accent selection:text-bg selection:bg-accent dark:selection:bg-accent">
+            & now it's all together
+        </h2>
+    </div>
+    <div class="flex flex-col">
+        <div class="w-[61%] relative place-self-end pr-8 pt-6">
+            <a href="" class="z-20">
+                <img src="{{ asset('img/cover.png') }}" alt="cover" class="w-full h-fit rounded-3xl select-none">
+            </a>
+            <h3 class="rotate-90 h-min w-min absolute right-[-99px] top-[148px] whitespace-nowrap tracking-[8px]">
+                Last update
+            </h3>
+            <div class="w-full flex flex-row justify-between items-center mt-4">
+                <h3 class="whitespace-nowrap">
+                    VssLocker
+                </h3>
+                <div class="bg-bg dark:bg-white h-1 w-full mx-6"></div>
+                <h3 class="whitespace-nowrap">
+                    Inner World EP
+                </h3>
+            </div>
+        </div>
+    </div>
+@endsection

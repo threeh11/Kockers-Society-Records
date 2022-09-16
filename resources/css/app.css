@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Inter, sans-serif;
+    }
+    h1 {
+        @apply leading-none text-[150px] tracking-wider font-bold text-bg dark:text-white selection:bg-bg selection:text-accent dark:selection:bg-white;
+    }
+    h2 {
+        @apply leading-none text-[60px] font-bold text-bg dark:text-white selection:bg-bg selection:text-accent dark:selection:bg-white;
+    }
+    h3 {
+        @apply leading-none text-2xl font-bold text-bg dark:text-white selection:bg-bg selection:text-accent dark:selection:bg-white;
+    }
+    p {
+        @apply leading-none text-xl font-bold text-bg dark:text-white selection:bg-bg selection:text-accent dark:selection:bg-white;
+    }
+    a {
+        @apply leading-none text-xl font-bold text-bg dark:text-white selection:bg-bg selection:text-accent dark:selection:bg-white;
+    }
+}
