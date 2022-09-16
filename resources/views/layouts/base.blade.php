@@ -15,10 +15,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-<body class="bg-white dark:bg-bg w-screen h-screen py-6 bg-no-repeat bg-contain bg-fixed">
-    <div class="container mx-auto grow flex flex-col justify-between h-full">
+<body class="bg-white dark:bg-bg w-screen h-screen py-6 bg-no-repeat bg-contain bg-fixed overflow-x-hidden">
+    <div class="container mx-auto flex flex-col">
         @include('includes.header')
-        <main class="mt-24 grid grid-cols-2 grow">
+        <main class="mt-24">
             @yield('content')
         </main>
         @include('includes.nav')
