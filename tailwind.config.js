@@ -12,8 +12,9 @@ module.exports = {
       'accent': '#FF4848',
       'white': '#F2F2F2',
       'whiteText': '#F5F5F5',
+      'addictive' : '#37cdbe',
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
   darkMode: 'class',
 }

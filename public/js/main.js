@@ -1,6 +1,6 @@
 let toggle = document.getElementById('toggle');
 let page = document.documentElement;
-
+let count = 0;//Счетчик для смены темы
 // Меняют общую тему сайта
 
 /**
@@ -35,11 +35,14 @@ function setLight() {
  * @returns {void}
  */
 function switchMode() {
-    localStorage.setItem('switch', 'off');
-    if (! toggle.classList.contains('dark')) {
-        setDark();
-    } else {
-        setLight()
+    count++;
+    if (count % 2 != 0){
+        localStorage.setItem('switch', 'off');
+        if (! toggle.classList.contains('dark')) {
+            setDark();
+        } else {
+            setLight()
+        }
     }
 }
 
