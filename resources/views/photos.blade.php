@@ -12,7 +12,7 @@
                     Moscow oblast
                 </h2>
                 <h2 class="text-bg dark:text-accent">
-                    Sergiev Posad
+                    Kubrinsk
                 </h2>
                 <h3 class="mt-10 font-semibold text-bg dark:text-accent">
                     06 december 2020
@@ -88,6 +88,6 @@
         </div>
     </div>
     <div class="text-center py-20">
-        <a href="" class="text-bg dark:text-white font-normal text-[24px] leading-7">All photos</a>
+        <a href="{{ route('photosArchive') }}" class="text-bg dark:text-white font-normal text-[24px] leading-7">All photos</a>
     </div>
 @endsection
