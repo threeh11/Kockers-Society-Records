@@ -15,4 +15,7 @@ class PagesController extends Controller
     public function portfolio() {
         return view('portfolio');
     }
+    public function photosArchive() {
+        return view('photosArchive');
+    }
 }

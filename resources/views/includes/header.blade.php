@@ -3,7 +3,7 @@
         <a href="/" class="text-2xl select-none">
             Kockers Society /
         </a>
-        <a href="photos" class="text-2xl select-none {{ Route::is('photos') ? 'block' : 'hidden' }}">
+        <a href="photos" class="text-2xl select-none {{ Route::is('photos') || Route::is('photosArchive') ? 'block' : 'hidden' }}">
             photos
         </a>
         <a href="music" class="text-2xl select-none {{ Route::is('music') ? 'block' : 'hidden' }}">
@@ -11,6 +11,9 @@
         </a>
         <a href="portfolio" class="text-2xl select-none {{ Route::is('portfolio') ? 'block' : 'hidden' }}">
             portfolio
+        </a>
+        <a href="photosArchive" class="text-2xl select-none {{ Route::is('photosArchive') ? 'block' : 'hidden' }}">
+            / gallery
         </a>
     </div>
     <svg width="78" height="30" viewBox="0 0 78 30" xmlns="http://www.w3.org/2000/svg" class="hidden dark:block place-self-center">
