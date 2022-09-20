@@ -1,12 +1,15 @@
 @extends('layouts.base')
 
 @section('content')
-    <div class="flex flex-col gap-y-20">
-        <div class="w-[56%] h-[500px] overflow-hidden rounded-3xl">
-            <img src="{{ asset('img/1.jpg') }}" alt="photo" class="cursor-pointer">
-            <h2>
-                
-            </h2>
+    <div class="flex flex-col gap-y-20 mb-10">
+
+        <div class="w-auto h-96 flex justify-start rounded-3xl overflow-hidden bg-accent">
+            <img src="{{ asset('img/1.jpg') }}" alt="photo" class="w-auto h-full">
         </div>
+
+        <div class="w-auto h-96 flex justify-end rounded-3xl overflow-hidden bg-accent">
+            <img src="{{ asset('img/2.jpg') }}" alt="photo" class="w-auto h-full">
+        </div>
+
     </div>
 @endsection

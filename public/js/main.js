@@ -1,34 +1,72 @@
 let toggle = document.getElementById('toggle');
 let page = document.documentElement;
+let count = 0;//Счетчик для смены темы
+// Меняют общую тему сайта
 
-if (localStorage.getItem('userTheme') == null) {
-    if (! toggle.classList.contains('dark')) {
-        switchMode();
-    } else {
-        // Определение темы браузера пользователя
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
-            page.classList.add('dark')
-            toggle.classList.add('dark')
-        } if (window.matchMedia('(prefers-color-scheme: dark)').matches == false) {
-            page.classList.remove('dark')
-            toggle.classList.remove('dark')
-        }
-    }
-} else {
-    page.classList.add(localStorage.getItem('userTheme'))
-    toggle.classList.add(localStorage.getItem('userTheme'))
+/**
+ * Устанавливает темную тему для сайта
+ *
+ * @returns {void}
+ */
+function setDark() {
+    localStorage.setItem('userTheme', 'dark');
+    page.classList.add('dark');
+    page.classList.remove('light');
+    toggle.classList.add('dark');
+    toggle.classList.remove('light');
 }
 
-console.log(localStorage.getItem('userTheme'));
+/**
+ * Устанавливает свтелую тему для сайта
+ *
+ * @returns {void}
+ */
+function setLight() {
+    localStorage.setItem('userTheme', 'light');
+    page.classList.remove('dark');
+    page.classList.add('light');
+    toggle.classList.remove('dark');
+    toggle.classList.add('light');
+}
 
+/**
+ * Меняет тему сайта
+ *
+ * @returns {void}
+ */
 function switchMode() {
-    if (! toggle.classList.contains('dark')) {
+    count++;
+    if (count % 2 != 0){
+        localStorage.setItem('switch', 'off');
+        if (! toggle.classList.contains('dark')) {
+            setDark();
+        } else {
+            setLight()
+        }
+    }
+}
+
+if (localStorage.getItem('switch') == 'on') {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
         localStorage.setItem('userTheme', 'dark');
-        page.classList.add(localStorage.getItem('userTheme'))
-        toggle.classList.add(localStorage.getItem('userTheme'))
+    }
+}
+
+if (localStorage.getItem('userTheme') == null) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
+        localStorage.setItem('userTheme', 'dark');
     } else {
         localStorage.setItem('userTheme', 'light');
-        page.classList.add(localStorage.getItem('userTheme'))
-        toggle.classList.add(localStorage.getItem('userTheme'))
     }
-};
+}
+
+if (localStorage.getItem('userTheme') == 'dark') {
+    setDark();
+} else {
+    setLight();
+}
+
+
+
+//
+
