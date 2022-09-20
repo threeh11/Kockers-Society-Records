@@ -1,5 +1,7 @@
 let toggle = document.getElementById('toggle');
 let page = document.documentElement;
+let moon = document.getElementById('moon');
+let sun = document.getElementById('sun');
 let count = 0;//Счетчик для смены темы
 // Меняют общую тему сайта
 
@@ -62,8 +64,16 @@ if (localStorage.getItem('userTheme') == null) {
 
 if (localStorage.getItem('userTheme') == 'dark') {
     setDark();
+    moon.classList.remove('swap-on');
+    sun.classList.remove('swap-off');
+    moon.classList.add('swap-off');
+    sun.classList.add('swap-on');
 } else {
     setLight();
+    moon.classList.add('swap-on');
+    sun.classList.add('swap-off');
+    moon.classList.remove('swap-off');
+    sun.classList.remove('swap-on');
 }
 
 

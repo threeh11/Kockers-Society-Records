@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-screen">
+<html lang="en" class="h-screen overflow-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-<body class="bg-white dark:bg-bg w-screen h-screen py-6 bg-no-repeat bg-contain bg-fixed overflow-x-hidden">
+<body class="overflow-x-hidden h-full bg-white dark:bg-bg bg-no-repeat bg-contain bg-fixed py-6">
     <div class="container mx-auto flex flex-col">
         @include('includes.header')
         <main class="mt-24">

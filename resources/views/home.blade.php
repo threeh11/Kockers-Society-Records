@@ -3,10 +3,10 @@
 @section('content')
     <div class="grid grid-cols-2">
         <div>
-            <h1 class="whitespace-pre selection:text-accent selection:bg-bg dark:selection:bg-white w-min">Kockers
+            <h1 class="whitespace-pre selection:text-main selection:bg-bg dark:selection:bg-white w-min">Kockers
 Society</h1>
-        <h1 class="selection:text-accent selection:bg-bg dark:selection:bg-white w-min relative">Records<div class="w-full absolute bg-accent h-1 top-20"></div></h1>
-            <h2 class="text-accent dark:text-accent selection:text-bg selection:bg-accent dark:selection:bg-accent">
+        <h1 class="selection:text-main selection:bg-bg dark:selection:bg-white w-min relative">Records<div class="w-full absolute bg-main h-1 top-20"></div></h1>
+            <h2 class="text-main dark:text-main selection:text-bg selection:bg-main dark:selection:bg-main">
                 & now it's all together
             </h2>
         </div>
