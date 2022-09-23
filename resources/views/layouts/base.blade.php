@@ -15,10 +15,15 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-<body class="overflow-x-hidden h-full bg-white dark:bg-bg bg-no-repeat bg-contain bg-fixed py-6">
-    <div class="container mx-auto flex flex-col">
-        @include('includes.header')
-        <main class="mt-24">
+<body class="overflow-x-hidden h-full bg-white dark:bg-bg bg-no-repeat bg-contain bg-fixed">
+    <div class="flex flex-col">
+        <header class="container mx-auto w-full md:grid grid-cols-3 hidden">
+            @include('includes.header')
+        </header>
+        <div class="flex flex-col items-center mb-20 mx-auto w-[98%] rounded-full bg-bg dark:bg-main">
+            @yield('pageTitle')
+        </div>
+        <main class="container mx-auto mb-14">
             @yield('content')
         </main>
     </div>

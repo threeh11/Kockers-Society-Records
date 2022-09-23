@@ -11,6 +11,7 @@ module.exports = {
       'bg': '#1E1E1E',
       'main': '#FF4848',
       'white': '#F2F2F2',
+      'gray': '#777777',
       'whiteText': '#F5F5F5',
       'addictive' : '#37cdbe',
     },
