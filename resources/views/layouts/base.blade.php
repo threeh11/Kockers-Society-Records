@@ -20,7 +20,7 @@
         <header class="container mx-auto w-full md:grid grid-cols-3 hidden">
             @include('includes.header')
         </header>
-        <div class="flex flex-col items-center mb-20 mx-auto w-[98%] rounded-full bg-bg dark:bg-main">
+        <div class="flex flex-col items-center mb-20 mx-auto w-[98%]">
             @yield('pageTitle')
         </div>
         <main class="container mx-auto mb-14">

@@ -76,7 +76,5 @@ if (localStorage.getItem('userTheme') == 'dark') {
     sun.classList.remove('swap-on');
 }
 
-
-
 //
 
