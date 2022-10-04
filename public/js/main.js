@@ -1,3 +1,5 @@
+const { createApp } = require("vue");
+
 let toggle = document.getElementById('toggle');
 let page = document.documentElement;
 let moon = document.getElementById('moon');

@@ -2,7 +2,8 @@
     <a href="/" class="text-2xl py-10 select-none">
         Kockers Society /
     </a>
-    <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group {{ Route::is('home') || Route::is('music') || Route::is('portfolio') ? 'hidden' : 'block' }}">
+    <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group
+        {{ Route::is('login.index') || Route::is('home') || Route::is('music') || Route::is('portfolio') ? 'hidden' : 'block' }}">
         <a href="music" class="select-none duration-200 w-full rounded-2xl px-4 py-2 bg-main hover:bg-main/75 absolute z-0 text-white opacity-0 left-0 top-10 group-hover:block group-hover:opacity-100 group-hover:top-0">
             music
         </a>
@@ -13,7 +14,8 @@
             portfolio
         </a>
     </div>
-    <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group {{ Route::is('home') || Route::is('photos') || Route::is('portfolio') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
+    <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group
+        {{ Route::is('login.index') || Route::is('home') || Route::is('photos') || Route::is('portfolio') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
         <a href="photos" class="w-full text-left select-none duration-200 rounded-2xl px-4 py-2 bg-main hover:bg-main/75 absolute z-0 text-white opacity-0 left-0 top-10 group-hover:block group-hover:opacity-100 group-hover:top-0">
             photos
         </a>
@@ -24,7 +26,8 @@
             portfolio
         </a>
     </div>
-    <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group {{ Route::is('home') || Route::is('photos') || Route::is('music') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
+    <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group
+        {{ Route::is('login.index') || Route::is('home') || Route::is('photos') || Route::is('music') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
         <a href="photos" class="w-full text-left select-none duration-200 rounded-2xl px-4 py-2 bg-main hover:bg-main/75 absolute z-0 text-white opacity-0 left-0 top-10 group-hover:block group-hover:opacity-100 group-hover:top-0">
             photos
         </a>
@@ -50,12 +53,12 @@
         <label class="swap swap-rotate">
             <input type="checkbox" />
             <svg id="moon" class="swap-on fill-transparent stroke-white w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>
-            <svg id="sun" class="swap-off fill-transparent stroke-bg w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>                  
+            <svg id="sun" class="swap-off fill-transparent stroke-bg w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
         </label>
     </div>
     <label class="swap">
         <input type="checkbox" />
-        <svg class="swap-on w-10 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>              
+        <svg class="swap-on w-10 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
         <svg class="swap-off w-10 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" /></svg>
     </label>
 </div>
@@ -77,12 +80,12 @@
         <label class="swap swap-rotate">
             <input type="checkbox" />
             <svg class="swap-on fill-transparent stroke-white w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>
-            <svg class="swap-off fill-transparent stroke-bg w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>                  
+            <svg class="swap-off fill-transparent stroke-bg w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
         </label>
     </div>
     <label class="swap">
         <input type="checkbox" />
-        <svg class="swap-on w-10 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>              
+        <svg class="swap-on w-10 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
         <svg class="swap-off w-10 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" /></svg>
     </label>
 </div>
