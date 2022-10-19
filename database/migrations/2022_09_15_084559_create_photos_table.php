@@ -11,7 +11,8 @@ return new class extends Migration
         Schema::create('photos', function (Blueprint $table) {
             $table->id()->from(1001);
             $table->string('photographer');
-            $table->string('place');
+            $table->string('area');
+            $table->string('city');
             $table->date('date');
             $table->string('pathToPhoto');
         });

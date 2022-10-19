@@ -3,7 +3,7 @@
         Kockers Society /
     </a>
     <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group
-        {{ Route::is('login.index') || Route::is('home') || Route::is('music') || Route::is('portfolio') ? 'hidden' : 'block' }}">
+        {{ Route::is('login.index') || Route::is('admin.index') || Route::is('home') || Route::is('music') || Route::is('portfolio') ? 'hidden' : 'block' }}">
         <a href="music" class="select-none duration-200 w-full rounded-2xl px-4 py-2 bg-main hover:bg-main/75 absolute z-0 text-white opacity-0 left-0 top-10 group-hover:block group-hover:opacity-100 group-hover:top-0">
             music
         </a>
@@ -15,7 +15,7 @@
         </a>
     </div>
     <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group
-        {{ Route::is('login.index') || Route::is('home') || Route::is('photos') || Route::is('portfolio') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
+        {{ Route::is('login.index') || Route::is('admin.index') || Route::is('home') || Route::is('photos') || Route::is('portfolio') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
         <a href="photos" class="w-full text-left select-none duration-200 rounded-2xl px-4 py-2 bg-main hover:bg-main/75 absolute z-0 text-white opacity-0 left-0 top-10 group-hover:block group-hover:opacity-100 group-hover:top-0">
             photos
         </a>
@@ -27,7 +27,7 @@
         </a>
     </div>
     <div class="relative py-10 hover:bg-bg dark:hover:bg-white rounded-2xl ease duration-100 group
-        {{ Route::is('login.index') || Route::is('home') || Route::is('photos') || Route::is('music') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
+        {{ Route::is('login.index') || Route::is('admin.index') || Route::is('home') || Route::is('photos') || Route::is('music') || Route::is('photosArchive') ? 'hidden' : 'block' }}">
         <a href="photos" class="w-full text-left select-none duration-200 rounded-2xl px-4 py-2 bg-main hover:bg-main/75 absolute z-0 text-white opacity-0 left-0 top-10 group-hover:block group-hover:opacity-100 group-hover:top-0">
             photos
         </a>

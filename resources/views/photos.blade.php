@@ -22,17 +22,17 @@
             </svg>
             <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -right-52 top-20">
                 <h3>
-                    Moscow oblast
+                    {{ $photos[0]->area }}
                 </h3>
                 <h3>
-                    Kubrinsk
+                    {{ $photos[0]->city }}
                 </h3>
                 <p class="mt-6 font-semibold">
-                    06 december 2020
+                    {{ $photos[0]->date }}
                 </p>
             </div>
             <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
-                <img src="{{ asset('img/1.jpg') }}" alt="photo" class="rounded-3xl select-none">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
             </a>
             <div class="absolute w-full h-full -top-3 -left-3 rounded-3xl bg-main z-10"></div>
         </div>
@@ -42,17 +42,17 @@
             </svg>
             <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -left-52 top-20">
                 <h3 class="text-right">
-                    Moscow oblast
+                    {{ $photos[1]->area }}
                 </h3>
                 <h3 class="text-right">
-                    Sergiev Posad
+                    {{ $photos[1]->city }}
                 </h3>
                 <p class="mt-6 font-semibold text-right">
-                    06 december 2020
+                    {{ $photos[1]->date }}
                 </p>
             </div>
             <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
-                <img src="{{ asset('img/2.jpg') }}" alt="photo" class="rounded-3xl select-none">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
             </a>
             <div class="absolute w-full h-full -top-3 -right-3 rounded-3xl bg-main z-10"></div>
         </div>
@@ -62,17 +62,17 @@
             </svg>
             <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -right-52 top-20">
                 <h3>
-                    Republic of Mari El
+                    {{ $photos[2]->area }}
                 </h3>
                 <h3>
-                    Yoshkar ola
+                    {{ $photos[2]->city }}
                 </h3>
                 <p class="mt-6 font-semibold">
-                    30 january 2022
+                    {{ $photos[2]->date }}
                 </p>
             </div>
             <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
-                <img src="{{ asset('img/3.jpg') }}" alt="photo" class="rounded-3xl select-none">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
             </a>
             <div class="absolute w-full h-full -top-3 -left-3 rounded-3xl bg-main z-10"></div>
         </div>
@@ -82,17 +82,17 @@
             </svg>
             <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -left-52 top-20">
                 <h3 class="text-right">
-                    Republic of Mari El
+                    {{ $photos[3]->area }}
                 </h3>
                 <h3 class="text-right">
-                    Yoshkar ola
+                    {{ $photos[3]->city }}
                 </h3>
                 <p class="mt-6 font-semibold text-right">
-                    29 december 2021
+                    {{ $photos[3]->date }}
                 </p>
             </div>
             <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
-                <img src="{{ asset('img/4.jpg') }}" alt="photo" class="rounded-3xl select-none">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
             </a>
             <div class="absolute w-full h-full -top-3 -right-3 rounded-3xl bg-main z-10"></div>
         </div>
