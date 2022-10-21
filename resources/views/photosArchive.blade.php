@@ -15,9 +15,198 @@
 @endsection
 
 @section('content')
-    <div class="grid">
-
-        
-
+    <div class="gap-2 grid grid-cols-4 grid-rows-10 ">
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div><div class="">
+            <a href="">
+                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[2]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
+        <div class="">
+            <a href="">
+                <img src="{{ asset($photos[3]->pathToPhoto) }}" alt="photo" class="object-contain rounded-md select-none">
+            </a>
+        </div>
     </div>
 @endsection

@@ -30,6 +30,7 @@ class PagesController extends Controller
 
     public function photosArchive()
     {
-        return view('photosArchive');
+        $photos = DB::table('photos')->get();
+        return view('photosArchive', ['photos' => $photos]);
     }
 }
