@@ -19,7 +19,7 @@ class StorePhotoAction
                 'area' => $request->area,
                 'city' => $request->city,
                 'date' => $request->date,
-                'pathToPhoto' => $path,
+                'pathToPhoto' => "storage/" . $path,
             ]);
         }
     }

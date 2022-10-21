@@ -16,46 +16,50 @@
 
 @section('content')
     <div class="flex flex-col gap-y-20">
-        <div class="w-[66%] h-[500px] odd:place-self-start relative group">
-            <svg width="140" height="140" viewBox="0 0 110 110" class="absolute p-2 bg-white dark:bg-bg rounded-full z-30 left-20 top-20 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M47.875 28.75L74.125 55L47.875 81.25" stroke-width="3" class="fill-transparent" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -right-52 top-20">
-                <h3>
-                    {{ $photos[0]->area }}
-                </h3>
-                <h3>
-                    {{ $photos[0]->city }}
-                </h3>
-                <p class="mt-6 font-semibold">
-                    {{ $photos[0]->date }}
-                </p>
+        @if ($photos[0]->area != NULL)
+            <div class="w-[66%] h-[500px] odd:place-self-start relative group">
+                <svg width="140" height="140" viewBox="0 0 110 110" class="absolute p-2 bg-white dark:bg-bg rounded-full z-30 left-20 top-20 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47.875 28.75L74.125 55L47.875 81.25" stroke-width="3" class="fill-transparent" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -right-52 top-20">
+                    <h3>
+                        {{ $photos[0]->area }}
+                    </h3>
+                    <h3>
+                        {{ $photos[0]->city }}
+                    </h3>
+                    <p class="mt-6 font-semibold">
+                        {{ $photos[0]->date }}
+                    </p>
+                </div>
+                <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
+                    <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
+                </a>
+                <div class="absolute w-full h-full -top-3 -left-3 rounded-3xl bg-main z-10"></div>
             </div>
-            <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
-                <img src="{{ asset($photos[0]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
-            </a>
-            <div class="absolute w-full h-full -top-3 -left-3 rounded-3xl bg-main z-10"></div>
-        </div>
-        <div class="w-[66%] h-[500px] even:place-self-end relative group">
-            <svg width="140" height="140" viewBox="0 0 110 110" class="absolute p-2 bg-white dark:bg-bg rounded-full z-30 right-20 top-20 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M47.875 28.75L74.125 55L47.875 81.25" stroke-width="3" class="fill-transparent" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -left-52 top-20">
-                <h3 class="text-right">
-                    {{ $photos[1]->area }}
-                </h3>
-                <h3 class="text-right">
-                    {{ $photos[1]->city }}
-                </h3>
-                <p class="mt-6 font-semibold text-right">
-                    {{ $photos[1]->date }}
-                </p>
+        @endif
+        @if ($photos[1]->area != 0)
+            <div class="w-[66%] h-[500px] even:place-self-end relative group">
+                <svg width="140" height="140" viewBox="0 0 110 110" class="absolute p-2 bg-white dark:bg-bg rounded-full z-30 right-20 top-20 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47.875 28.75L74.125 55L47.875 81.25" stroke-width="3" class="fill-transparent" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="absolute flex flex-col p-6 bg-white dark:bg-bg rounded-3xl z-30 -left-52 top-20">
+                    <h3 class="text-right">
+                        {{ $photos[1]->area }}
+                    </h3>
+                    <h3 class="text-right">
+                        {{ $photos[1]->city }}
+                    </h3>
+                    <p class="mt-6 font-semibold text-right">
+                        {{ $photos[1]->date }}
+                    </p>
+                </div>
+                <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
+                    <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
+                </a>
+                <div class="absolute w-full h-full -top-3 -right-3 rounded-3xl bg-main z-10"></div>
             </div>
-            <a href="" class="h-full w-full rounded-3xl overflow-hidden absolute z-20">
-                <img src="{{ asset($photos[1]->pathToPhoto) }}" alt="photo" class="rounded-3xl select-none">
-            </a>
-            <div class="absolute w-full h-full -top-3 -right-3 rounded-3xl bg-main z-10"></div>
-        </div>
+        @endif
         <div class="w-[66%] h-[500px] odd:place-self-start relative group">
             <svg width="140" height="140" viewBox="0 0 110 110" class="absolute p-2 bg-white dark:bg-bg rounded-full z-30 left-20 top-20 stroke-bg dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M47.875 28.75L74.125 55L47.875 81.25" stroke-width="3" class="fill-transparent" stroke-linecap="round" stroke-linejoin="round"/>
